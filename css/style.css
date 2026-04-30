@@ -574,26 +574,39 @@ tbody tr:hover { background: var(--primary-light); }
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero-blob { width: 320px; height: 320px; }
+  .team-stats-banner { gap: 30px; flex-wrap: wrap; }
 }
 @media (max-width: 768px) {
-  body { padding-top: 60px; }
-  .fw-header { height: 60px; }
-  .hero-section { flex-direction: column; padding: 40px 0; min-height: auto; }
+  body { padding-top: 130px; }
+  .fw-header { height: auto; padding: 10px 0; }
+  .header-inner { flex-direction: column; gap: 10px; }
+  .logo img { height: 50px !important; }
+  .desktop-nav { width: 100%; overflow-x: auto; padding-bottom: 5px; }
+  .desktop-nav::-webkit-scrollbar { height: 0; display: none; }
+  .hero-section { flex-direction: column; padding: 40px 0; min-height: auto; text-align: center; }
   .hero-title { font-size: 2.4rem; }
-  .hero-right { width: 100%; order: -1; }
-  .hero-blob { width: 260px; height: 260px; }
+  .hero-desc { margin: 0 auto 30px auto; }
+  .hero-right { width: 100%; order: -1; margin-bottom: 30px; }
+  .hero-blob { width: 260px; height: 260px; margin: 0 auto; }
   .hero-stat { display: none; }
-  .desktop-nav { display: none; }
   .reviews-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+  .footer-social { justify-content: center; }
   .promo-banner { flex-direction: column; padding: 40px 30px; text-align: center; }
   .promo-image { display: none; }
+  .team-stats-banner { gap: 20px; padding: 30px 15px; }
+  .team-stat-item strong { font-size: 2rem; }
+  .delivery-grid-wrapper { grid-template-columns: 1fr; }
+  .food-grid, .team-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 }
 @media (max-width: 480px) {
   .hero-title { font-size: 2rem; }
   .section-title { font-size: 1.5rem; }
   .form-card { padding: 28px 20px; }
+  .support-hero { padding: 30px 15px; }
+  .cat-pill { padding: 15px; font-size: 0.8rem; }
+  .cat-pill .cat-icon { width: 45px; height: 45px; font-size: 1.3rem; }
 }
 
 /* 
