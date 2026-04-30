@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز مكان | كشري التحرير</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header class="fw-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">كشري التحرير</a>
+    <nav class="desktop-nav"><ul>
+      <li><a id="nav-index" href="index.html">الرئيسية</a></li><li><a id="nav-menu" href="menu.html">المنيو</a></li>
+      <li><a id="nav-reservation" href="reservation.html" class="active">حجز مكان</a></li><li><a id="nav-delivery" href="delivery.html">التوصيل</a></li>
+      <li><a id="nav-reviews" href="reviews.html">الآراء</a></li><li><a id="nav-contact" href="contact.html">اتصل بنا</a></li>
+      <li><a id="nav-team" href="team.html">فريق العمل</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <span id="userWelcome"></span>
+      <button id="themeSwitchBtn" class="btn-theme" title="تبديل الثيم"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> تسجيل الدخول</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    
+    <div class="support-hero">
+      <h1><i class="fas fa-chair"></i> احجز مكانك دلوقتي</h1>
+      <p>احجز مكانك في أشهر كشري في مصر.. تجربة أكل مش هتنساها مع العيلة أو صحابك.</p>
+    </div>
+
+    <div class="form-card">
+      <h2><i class="fas fa-calendar-check"></i> بيانات الحجز</h2>
+
+      <form id="reservationForm" onsubmit="validateForm(event,'reservationForm')">
+        <div class="form-group">
+          <label for="resBranch"><i class="fas fa-store"></i> اختار الفرع</label>
+          <div class="input-icon-wrap"><i class="icon fas fa-store"></i>
+            <select id="resBranch" class="form-control">
+              <option value="downtown">فرع وسط البلد (شارع عبد الخالق ثروت)</option>
+              <option value="mohandessin">فرع المهندسين (شارع الدكتور المحروق)</option>
+              <option value="nasr">فرع مدينة نصر (شارع عباس العقاد)</option>
+              <option value="dokki">فرع الدقي (شارع التحرير)</option>
+              <option value="6oct">فرع 6 أكتوبر (ميدان الحصري)</option>
+              <option value="maadi">فرع المعادي (شارع النصر)</option>
+              <option value="alex">فرع الإسكندرية (ميامي)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="resName"><i class="fas fa-user"></i> الاسم</label>
+          <div class="input-icon-wrap"><i class="icon fas fa-user"></i>
+            <input type="text" id="resName" class="form-control" placeholder="اسمك">
+          </div>
+          <span id="resName-error" class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="resDate"><i class="fas fa-calendar-alt"></i> هتحجز امتى؟</label>
+          <div class="input-icon-wrap"><i class="icon fas fa-calendar-alt"></i>
+            <input type="date" id="resDate" class="form-control">
+          </div>
+          <span id="resDate-error" class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="resTime"><i class="fas fa-clock"></i> وقت الحجز</label>
+          <div class="input-icon-wrap"><i class="icon fas fa-clock"></i>
+            <input type="time" id="resTime" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="resPeople"><i class="fas fa-users"></i> كام واحد؟</label>
+          <div class="input-icon-wrap"><i class="icon fas fa-users"></i>
+            <input type="number" id="resPeople" class="form-control" placeholder="عدد الأفراد..." min="1" max="20">
+          </div>
+          <span id="resPeople-error" class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-bowl-food"></i> طلباتك المسبقة (اختياري)</label>
+          <select class="form-control">
+            <option value="">هطلب لما أوصل</option>
+            <optgroup label="أطباق الكشري">
+              <option>كشري تحرير (14 ج)</option>
+              <option>كشري توب تحرير (18 ج)</option>
+              <option>كشري لارج تحرير (22 ج)</option>
+              <option>كشري كينج التحرير (26 ج)</option>
+              <option>كشري ميجا (30 ج)</option>
+              <option>ميجا تحرير مخصوص (34 ج)</option>
+              <option>فاميلي تحرير (50 ج)</option>
+              <option>كشري عائلي (105 ج)</option>
+            </optgroup>
+            <optgroup label="طواجن التحرير">
+              <option>طاجن سادة (6 ج)</option>
+              <option>طاجن لحمة (18 ج)</option>
+              <option>طاجن كبدة (18 ج)</option>
+              <option>طاجن فراخ (23 ج)</option>
+            </optgroup>
+            <optgroup label="تحلية وإضافات">
+              <option>أرز بلبن (12 ج)</option>
+              <option>مهلبية (12 ج)</option>
+              <option>صلصة / تقلية / حمص / عدس (3 ج)</option>
+              <option>شطة حراقة / دقة (2 ج)</option>
+            </optgroup>
+            <optgroup label="المشروبات">
+              <option>بيبسي حجم كبير (10 ج)</option>
+              <option>بيبسي حجم صغير (5 ج)</option>
+              <option>مياه معدنية (كبيرة) (5 ج)</option>
+              <option>مياه معدنية (صغيرة) (3 ج)</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-sticky-note"></i> طلبات خاصة (اختياري)</label>
+          <textarea class="form-control" rows="3" placeholder="عندك حاجة عايزها زيادة؟ قولنا وإحنا ننفذها."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-check-circle"></i> أكد الحجز دلوقتي
+        </button>
+
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+          <div class="trust-item"><i class="fas fa-shield-halved"></i> حجز آمن</div>
+          <div class="trust-item"><i class="fas fa-bolt"></i> تأكيد فوري</div>
+          <div class="trust-item"><i class="fas fa-leaf"></i> خدمة مميزة</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="fw-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><a href="index.html" class="logo">كشري التحرير</a></div>
+        <p class="footer-desc">من سنة 1982، كشري التحرير بيقدم أحلى وأنضف كشري في مصر. تجربة متتنسيش في كل معلقة.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com"   target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://tiktok.com"    target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/"        target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>روابط سريعة</h4><ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html">المنيو</a></li>
+        <li><a href="reservation.html" class="active">احجز مكان</a></li>
+        <li><a href="reviews.html">الآراء</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>مساعدة</h4><ul>
+        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="delivery.html">التوصيل</a></li>
+        <li><a href="team.html">فريق العمل</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>اشترك في أخبارنا</h4>
+        <p>تكون أول واحد يعرف عروضنا والأصناف الجديدة!</p>
+        <div class="newsletter-input-row">
+          <input type="email" placeholder="بريدك الإلكتروني...">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 كشري التحرير — جميع الحقوق محفوظة. اتعمل بحب في مصر من سنة 1982</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body></html>

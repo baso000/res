@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنيو | كشري التحرير</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header class="fw-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">كشري التحرير</a>
+    <nav class="desktop-nav"><ul>
+      <li><a id="nav-index" href="index.html">الرئيسية</a></li><li><a id="nav-menu" href="menu.html" class="active">المنيو</a></li>
+      <li><a id="nav-reservation" href="reservation.html">احجز مكان</a></li><li><a id="nav-delivery" href="delivery.html">التوصيل</a></li>
+      <li><a id="nav-reviews" href="reviews.html">الآراء</a></li><li><a id="nav-contact" href="contact.html">اتصل بنا</a></li>
+      <li><a id="nav-team" href="team.html">فريق العمل</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <span id="userWelcome"></span>
+      <button id="themeSwitchBtn" class="btn-theme" title="تبديل الثيم"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> تسجيل الدخول</a>
+    </div>
+  </div>
+</header>
+<main>
+<div class="container">
+  <div class="support-hero">
+    <h1><i class="fas fa-list"></i> منيو كشري التحرير</h1>
+    <p>اختار من أحلى أطباق الكشري، الطواجن، والتحلية بأسعار التحرير الرسمية</p>
+  </div>
+</div>
+
+<div class="menu-nav-sticky">
+  <div class="container menu-nav-inner">
+    <div class="category-shortcuts">
+      <button class="shortcut-btn active" onclick="scrollToSection('koshary')">أطباق الكشري</button>
+      <button class="shortcut-btn" onclick="scrollToSection('tajines')">طواجن التحرير</button>
+      <button class="shortcut-btn" onclick="scrollToSection('desserts')">تحلية وإضافات</button>
+      <button class="shortcut-btn" onclick="scrollToSection('drinks')">المشروبات</button>
+    </div>
+    <div class="menu-search-wrap">
+      <i class="fas fa-search"></i>
+      <input type="text" id="menuSearch" placeholder="دور على اللي نفسك فيه..." onkeyup="filterMenu()">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  
+  <!-- Koshary Section -->
+  <section class="food-section" id="koshary">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">أطباق الكشري</h2>
+        <p>(8 أصناف)</p>
+      </div>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary1.jpg" alt="كشري تحرير"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري تحرير</h3><p class="food-card-desc">الحجم الصغير والأصيل من كشري التحرير.</p>
+          <div class="food-card-footer"><span class="food-price">14 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary2.jpg" alt="كشري توب تحرير"><span class="food-card-badge">وجبة سريعة</span><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري توب تحرير</h3><p class="food-card-desc">حجم مناسب لوجبة سريعة وخفيفة في أي وقت.</p>
+          <div class="food-card-footer"><span class="food-price">18 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary1.jpg" alt="كشري لارج تحرير"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري لارج تحرير</h3><p class="food-card-desc">للي جوعهم متوسط، مع صلصة زيادة.</p>
+          <div class="food-card-footer"><span class="food-price">22 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary2.jpg" alt="كشري كينج التحرير"><span class="food-card-badge badge-gold">أكتر واحد مطلوب</span><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري كينج التحرير</h3><p class="food-card-desc">الحجم الكينج المميز اللي يشبعك تماماً، وجبة الأبطال.</p>
+          <div class="food-card-footer"><span class="food-price">26 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary3.jpg" alt="كشري ميجا"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري ميجا</h3><p class="food-card-desc">يكفي 3 أفراد لجمعة حلوة.</p>
+          <div class="food-card-footer"><span class="food-price">30 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary3.jpg" alt="ميجا تحرير مخصوص"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">ميجا تحرير مخصوص</h3><p class="food-card-desc">بإضافات التحرير المخصوصة لـ 3 أفراد.</p>
+          <div class="food-card-footer"><span class="food-price">34 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary3.jpg" alt="فاميلي تحرير"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">فاميلي تحرير</h3><p class="food-card-desc">وجبة عائلية متكاملة لـ 4 أفراد.</p>
+          <div class="food-card-footer"><span class="food-price">50 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary3.jpg" alt="كشري عائلي"><span class="food-card-badge badge-green">للعيلة الكبيرة</span><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">كشري عائلي</h3><p class="food-card-desc">الحجم الأكبر، يكفي 5 أفراد مع كل الإضافات والصلصات.</p>
+          <div class="food-card-footer"><span class="food-price">105 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tajines Section -->
+  <section class="food-section" id="tajines">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">طواجن التحرير</h2>
+        <p>(4 أصناف)</p>
+      </div>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/tajine.jpg" alt="طاجن سادة"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">طاجن سادة</h3><p class="food-card-desc">طاجن مكرونة سادة بصلصة التحرير المميزة.</p>
+          <div class="food-card-footer"><span class="food-price">6 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/tajine.jpg" alt="طاجن لحمة"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">طاجن لحمة</h3><p class="food-card-desc">لحم مفروم بلدي مع الطاجن السخن.</p>
+          <div class="food-card-footer"><span class="food-price">10 - 18 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/tajine.jpg" alt="طاجن كبدة"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">طاجن كبدة</h3><p class="food-card-desc">كبدة إسكندراني بالتوابل في طاجن مكرونة.</p>
+          <div class="food-card-footer"><span class="food-price">10 - 18 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/tajine.jpg" alt="طاجن فراخ"><span class="food-card-badge badge-gold">شيف التحرير</span><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">طاجن فراخ</h3><p class="food-card-desc">قطع فراخ طازة متبلة بالفرن مع المكرونة والجبنة السايحة.</p>
+          <div class="food-card-footer"><span class="food-price">13 - 23 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Desserts & Addons -->
+  <section class="food-section" id="desserts">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">تحلية وإضافات</h2>
+        <p>(4 أصناف)</p>
+      </div>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/roz.jpg" alt="أرز بلبن"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">أرز بلبن</h3><p class="food-card-desc">حلى مصري أصيل بعد الكشري.</p>
+          <div class="food-card-footer"><span class="food-price">12 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/roz.jpg" alt="مهلبية"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">مهلبية</h3><p class="food-card-desc">مهلبية قشطية لذيذة.</p>
+          <div class="food-card-footer"><span class="food-price">12 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary1.jpg" alt="إضافات الكشري"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">صلصة / تقلية / حمص / عدس</h3><p class="food-card-desc">علشان تزود أي مكون تحبه في الكشري.</p>
+          <div class="food-card-footer"><span class="food-price">3 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/koshary2.jpg" alt="شطة ودقة"><span class="food-card-badge badge-spicy">حراق نار</span><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">شطة حراقة / دقة</h3><p class="food-card-desc">لعشاق التحدي، شطة التحرير الأصلية المركزة.</p>
+          <div class="food-card-footer"><span class="food-price">1 - 2 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Drinks Section -->
+  <section class="food-section" id="drinks">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">المشروبات</h2>
+        <p>(4 أصناف)</p>
+      </div>
+    </div>
+    <div class="food-grid">
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/drink.jpg" onerror="this.src='img/roz.jpg'" alt="بيبسي كبير"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">بيبسي حجم كبير</h3><p class="food-card-desc">كوباية بيبسي مشبرة (كبير).</p>
+          <div class="food-card-footer"><span class="food-price">10 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/drink.jpg" onerror="this.src='img/roz.jpg'" alt="بيبسي صغير"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">بيبسي حجم صغير</h3><p class="food-card-desc">علبة بيبسي كانز (صغير).</p>
+          <div class="food-card-footer"><span class="food-price">5 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/water.jpg" onerror="this.src='img/roz.jpg'" alt="مياه معدنية كبيرة"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">مياه معدنية (كبيرة)</h3><p class="food-card-desc">إزازة مياه معدنية ساقعة (كبيرة).</p>
+          <div class="food-card-footer"><span class="food-price">5 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+      <article class="food-card">
+        <div class="food-card-img-wrap"><img src="img/water.jpg" onerror="this.src='img/roz.jpg'" alt="مياه معدنية صغيرة"><button class="food-card-fav"><i class="far fa-heart"></i></button></div>
+        <div class="food-card-body">
+          <h3 class="food-card-title">مياه معدنية (صغيرة)</h3><p class="food-card-desc">إزازة مياه معدنية ساقعة (صغيرة).</p>
+          <div class="food-card-footer"><span class="food-price">3 ج</span><button class="btn-add"><i class="fas fa-plus"></i></button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</div>
+</main>
+<footer class="fw-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><a href="index.html" class="logo">كشري التحرير</a></div>
+        <p class="footer-desc">من سنة 1982، كشري التحرير بيقدم أحلى وأنضف كشري في مصر. تجربة متتنسيش في كل معلقة.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com"   target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://tiktok.com"    target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/"        target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>روابط سريعة</h4><ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html" class="active">المنيو</a></li>
+        <li><a href="reservation.html">احجز مكان</a></li>
+        <li><a href="reviews.html">الآراء</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>مساعدة</h4><ul>
+        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="delivery.html">التوصيل</a></li>
+        <li><a href="team.html">فريق العمل</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>اشترك في أخبارنا</h4>
+        <p>تكون أول واحد يعرف عروضنا والأصناف الجديدة!</p>
+        <div class="newsletter-input-row">
+          <input type="email" placeholder="بريدك الإلكتروني...">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 كشري التحرير — جميع الحقوق محفوظة. اتعمل بحب في مصر من سنة 1982</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+function scrollToSection(id){const el=document.getElementById(id);if(el){window.scrollTo({top:el.offsetTop-120,behavior:'smooth'});}}
+function filterMenu(){const input=document.getElementById('menuSearch').value.toLowerCase();const cards=document.querySelectorAll('.food-card');cards.forEach(card=>{const title=card.querySelector('.food-card-title').innerText.toLowerCase();if(title.includes(input)){card.style.display='block';}else{card.style.display='none';}});}
+</script>
+</body></html>
