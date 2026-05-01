@@ -368,9 +368,11 @@ button { font-family: var(--font); cursor: pointer; }
 
 /* ---- Menu Specific ---- */
 .menu-nav-sticky {
-  position: sticky; top: 0; z-index: 900;
-  background: var(--card-bg); border-bottom: 1px solid var(--border);
-  padding: 10px 0; transition: all var(--transition);
+  position: sticky; top: 0; z-index: 9999;
+  background: var(--bg);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0; transition: all var(--transition);
 }
 .menu-nav-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 20px;
