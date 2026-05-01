@@ -368,9 +368,9 @@ button { font-family: var(--font); cursor: pointer; }
 
 /* ---- Menu Specific ---- */
 .menu-nav-sticky {
-  position: sticky; top: 0; z-index: 9999;
-  background: var(--bg);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  position: sticky; top: 0; z-index: 9999 !important;
+  background-color: #FAFFF8 !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
   border-bottom: 1px solid var(--border);
   padding: 15px 0; transition: all var(--transition);
 }
@@ -695,3 +695,5 @@ body.dark { background-color: #111; color: #fff; }
 
 .cta-section { text-align: center; padding: 40px 20px 20px 20px; margin-top: 20px; }
 .cta-btn { padding: 16px 40px; font-size: 1.1rem; }
+
+.dark .menu-nav-sticky { background-color: #111 !important; }
