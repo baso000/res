@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-
-    <header class="fw-header">
+    <header class="main-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">كشري التحرير</a>
-    <nav class="desktop-nav"><ul>
-      <li><a id="nav-index" href="index.html">الرئيسية</a></li><li><a id="nav-menu" href="menu.html">المنيو</a></li>
-      <li><a id="nav-reservation" href="reservation.html">احجز مكان</a></li><li><a id="nav-delivery" href="delivery.html">التوصيل</a></li>
-      <li><a id="nav-reviews" href="reviews.html">الآراء</a></li><li><a id="nav-contact" href="contact.html">اتصل بنا</a></li>
-      <li><a id="nav-team" href="team.html" class="active">فريق العمل</a></li>
-    </ul></nav>
+    <a href="index.html" class="logo"><img src="img/اللوجو.jpg" alt="كشري التحرير" style="height: 40px; vertical-align: middle;"> كشري التحرير</a>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a id="nav-index" href="index.html">الرئيسية</a></li>
+        <li><a id="nav-menu" href="menu.html">المنيو</a></li>
+        <li><a id="nav-reservation" href="reservation.html">احجز مكان</a></li>
+        <li><a id="nav-delivery" href="delivery.html">التوصيل</a></li>
+        <li><a id="nav-reviews" href="reviews.html">الآراء</a></li>
+        <li><a id="nav-contact" href="contact.html">اتصل بنا</a></li>
+        <li><a id="nav-team" href="team.html" class="active">فريق العمل</a></li>
+      </ul>
+    </nav>
     <div class="header-actions">
       <span id="userWelcome"></span>
       <button id="themeSwitchBtn" class="btn-theme" title="تبديل الثيم"><i class="fas fa-moon"></i></button>
@@ -27,207 +30,128 @@
     </div>
   </div>
 </header>
-
     <main>
         <div class="container">
-            <!-- Page Hero -->
             <div class="support-hero">
-                <h1><i class="fas fa-users-gear"></i> فريق العمل اللي بنى الموقع</h1>
-                <p>اتعرف على الفريق اللي صمم وطور موقع كشري التحرير بكل حب واحترافية.</p>
+                <h1><i class="fas fa-users-gear"></i> فريق العمل</h1>
+                <p>بيانات أعضاء الفريق المطور لموقع كشري التحرير.</p>
             </div>
 
-            <!-- Stats Banner -->
-            <div class="team-stats-banner">
-                <div class="team-stat-item">
-                    <strong>8</strong>
-                    <span>مطور محترف</span>
-                </div>
-                <div class="team-stat-item">
-                    <strong>+3</strong>
-                    <span>سنين خبرة</span>
-                </div>
-                <div class="team-stat-item">
-                    <strong>+50 ألف</strong>
-                    <span>مستخدم مبسوط</span>
-                </div>
-                <div class="team-stat-item">
-                    <strong>100%</strong>
-                    <span>حب وإبداع</span>
-                </div>
-            </div>
-
-            <!-- Section Header -->
-            <div>
-                <h2 class="section-title">مين هما أعضاء الفريق؟</h2>
-                <p class="section-subtitle">كل واحد فينا حط لمسته الخاصة علشان يخلي موقع كشري التحرير تجربة ملهاش زي.</p>
-            </div>
-
-            <!-- Team Cards Grid -->
             <div class="team-grid">
-
                 <!-- Developer 1 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ب</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ب</div></div>
                     <div class="team-card-body">
-                        <h3 class="team-name">باسم كريم سيد</h3>
-                        <span class="team-role"><i class="fas fa-code"></i> Frontend Developer</span>
-                        <p class="team-bio">شاطر جداً في بناء واجهات مستخدم بتتحرك وشكلها شيك. بيحب التفاصيل الصغيرة اللي بتفرق في شكل الموقع.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com" target="_blank" class="twitter" title="X"><i class="fab fa-x-twitter"></i></a>
+                        <h3 class="team-name">باسم كريم </h3>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250188</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> عمل الصفحة الرئيسية والمنيو، وكتب كل أكواد الـ CSS والـ JS بتاعة الموقع.</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 2 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">أ</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">أ</div></div>
                     <div class="team-card-body">
-                        <h3 class="team-name">أروى شريف جمعة</h3>
-                        <span class="team-role"><i class="fas fa-palette"></i> UI/UX Designer</span>
-                        <p class="team-bio">مصممة متخصصة في تجربة المستخدم وبتعمل واجهات تجنن. بتشوف إن التصميم الصح هو اللي بتحس بيه مش بس بتشوفه.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <h3 class="team-name">أروى شريف</h3>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250120</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> صممت شكل الصفحة الرئيسية والمنيو، واختارت الألوان والخطوط اللي تخلي الموقع شيك.</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 3 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ب</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ب</div></div>
                     <div class="team-card-body">
-                        <h3 class="team-name">بلال نبيل عواد</h3>
-                        <span class="team-role"><i class="fas fa-server"></i> Backend Developer</span>
-                        <p class="team-bio">مبرمج شاطر في بناء الأنظمة القوية والسريعة. خبير في قواعد البيانات وبيضمن إن الموقع يفضل شغال بكفاءة.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com" target="_blank" class="twitter" title="X"><i class="fab fa-x-twitter"></i></a>
+                        <h3 class="team-name">بلال نبيل </h3>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250213</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> عمل صفحة "احجز مكان" وظبط الفورم والبيانات اللي بتتبعت فيها.</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 4 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ج</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ج</div></div>
                     <div class="team-card-body">
                         <h3 class="team-name">جاسمين مصطفى</h3>
-                        <span class="team-role"><i class="fas fa-mobile-alt"></i> Mobile Developer</span>
-                        <p class="team-bio">مطورة تطبيقات موبايل شاطرة جداً. هدفها إنها توصل تجربة كشري التحرير لكل موبايل في مصر.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250230</p>
+                            <p><strong>التخصص:</strong> Team Leader</p>
+                            <p><strong>الدور في المشروع:</strong> التيم ليدر وعملت صفحات "التوصيل" و"تواصل معنا".</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 5 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">أ</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">أ</div></div>
                     <div class="team-card-body">
-                        <h3 class="team-name">أيمان عبد القادر</h3>
-                        <span class="team-role"><i class="fas fa-cloud"></i> DevOps Engineer</span>
-                        <p class="team-bio">مهندسة بنية تحتية بتضمن إن الموقع يفضل شغال 24 ساعة من غير أي عطل وبأعلى درجة أمان.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com" target="_blank" class="twitter" title="X"><i class="fab fa-x-twitter"></i></a>
+                        <h3 class="team-name">ايمان عبد القادر</h3>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250181</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> عملت صفحات "تسجيل الدخول" و"عمل حساب جديد" وأمنت الموقع.وباسم كمل عليها وظبط ال JS</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 6 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ز</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ز</div></div>
                     <div class="team-card-body">
-                        <h3 class="team-name">زياد</h3>
-                        <span class="team-role"><i class="fas fa-bug"></i> QA Engineer</span>
-                        <p class="team-bio">مهندس جودة مبيفوتش غلطة. بيجرب كل حتة في الموقع علشان يضمن إن تجربتك تكون من غير أي مشاكل.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <h3 class="team-name">زياد محمد</h3>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250425</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> عمل صفحة "الآراء" وراجع الموقع كله فنيًا عشان ميبقاش فيه غلطات.</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 7 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ب</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ب</div></div>
                     <div class="team-card-body">
                         <h3 class="team-name">بافلى مينا</h3>
-                        <span class="team-role"><i class="fas fa-database"></i> Database Engineer</span>
-                        <p class="team-bio">خبير في قواعد البيانات وبيعرف يخلي الداتا آمنة وسريعة جداً. بيشوف إن كل معلومة ليها قيمة كبيرة.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://twitter.com" target="_blank" class="twitter" title="X"><i class="fab fa-x-twitter"></i></a>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250191</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> عمل صفحة "فريق العمل" وظبط بيانات الفروع اللي موجودة في الموقع.</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Developer 8 -->
                 <article class="team-card">
-                    <div class="team-card-header">
-                        <div class="team-avatar">ح</div>
-                    </div>
+                    <div class="team-card-header"><div class="team-avatar">ح</div></div>
                     <div class="team-card-body">
                         <h3 class="team-name">حبيبة عبدالله</h3>
-                        <span class="team-role"><i class="fas fa-tasks"></i> Project Manager</span>
-                        <p class="team-bio">مديرة المشروع اللي بتخلي الفريق كله شغال مع بعضه. بتعرف تحول الأفكار لخطط حقيقية بتنفذ على الأرض.</p>
-                        <div class="team-socials">
-                            <a href="https://github.com" target="_blank" class="github" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <div class="member-info">
+                            <p><strong>كود الطالب:</strong> 20250291</p>
+                            <p><strong>التخصص:</strong> Frontend Developer</p>
+                            <p><strong>الدور في المشروع:</strong> نسقت المحتوى وراجعت الروابط وتأكدت إن كل الصور جودتها عالية.</p>
                         </div>
                     </div>
                 </article>
-
-            </div><!-- end team-grid -->
-
-            <!-- CTA Section -->
-            <div class="cta-section">
-                <h2 class="section-title">عايز تنضم لينا؟</h2>
-                <p class="section-subtitle">دايماً بندور على ناس شاطرة ومبدعة. ابعتلنا بروفايلك دلوقتي!</p>
-                <a href="contact.html" class="btn btn-primary cta-btn">
-                    <i class="fas fa-paper-plane"></i> كلمنا دلوقتي
-                </a>
             </div>
-
-        </div><!-- end container -->
+        </div>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="fw-footer">
+    <footer class="main-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo"><a href="index.html" class="logo">كشري التحرير</a></div>
+        <div class="footer-logo"><a href="index.html" class="logo"><img src="img/اللوجو.jpg" alt="كشري التحرير" style="height: 30px; vertical-align: middle;"> كشري التحرير</a></div>
         <p class="footer-desc">من سنة 1982، كشري التحرير بيقدم أحلى وأنضف كشري في مصر. تجربة متتنسيش في كل معلقة.</p>
         <div class="footer-social">
-          <a href="https://facebook.com"  target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com"   target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://tiktok.com"    target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-          <a href="https://wa.me/"        target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/ElTahrirEG" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       <div class="footer-col"><h4>روابط سريعة</h4><ul>
@@ -251,10 +175,9 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 كشري التحرير — جميع الحقوق محفوظة. اتعمل بحب في مصر من سنة 1982</p>
+    <p>&copy; 2026 كشري التحرير — جميع الحقوق محفوظة. من سنة 1982 في قلب مصر</p>
   </div>
 </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>
